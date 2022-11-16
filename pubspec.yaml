@@ -1,0 +1,45 @@
+name: astest
+description: AsTest for you
+version: 1.0.0
+
+
+environment:
+  sdk: '>=2.18.4 <3.0.0'
+
+
+dependencies:
+
+  bitsdojo_window: ^0.1.1+1
+  desktop_window: ^0.4.0
+
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/images/
+
+  fonts:
+    - family: Poiret
+      fonts:
+        - asset: assets/fonts/PoiretOne-Regular.ttf
+    - family: Century
+      fonts:
+        - asset: assets/fonts/CenturyGothic-Regular.ttf
+    - family: Google
+      fonts:
+        - asset: assets/fonts/GoogleSans-Regular.ttf
