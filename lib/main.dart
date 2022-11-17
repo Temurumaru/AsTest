@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.green,
       ),
-      home: const PageHome(title: 'AsTest'),
+      home: const PageHome(title: 'Dashboard'),
     );
   }
 }

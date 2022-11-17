@@ -28,13 +28,36 @@ class _PageHome extends State<PageHome> {
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: mGreen,
-          title: mText(25, widget.title),
+          // centerTitle: true,
+          title: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              mText(25, widget.title),
+              ElevatedButton(
+                onPressed: (){},
+                style: TextButton.styleFrom(
+                  backgroundColor: mWhite,
+
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(17.5),
+                  )
+                ),
+                child: mIcon(Icons.settings, color: mGreen),
+              )
+            ],
+          ),
         ),
         body: Container(
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           alignment: Alignment.center,
           child: Column(
             children: <Widget>[
+              
+              Padding(
+                padding: const EdgeInsets.fromLTRB(20, 10, 20, 15),
+                child: mText(20, 'Choose from the following category and start the test.', color: mGreen, align: TextAlign.center),
+              ),
+              
               Padding(
                 padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
                 child: ElevatedButton(
@@ -42,7 +65,7 @@ class _PageHome extends State<PageHome> {
                     // foregroundColor: mGreen,
                     backgroundColor: mGreen,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
+                      borderRadius: BorderRadius.circular(17.5),
                     ),
                     minimumSize: Size(wS(context, 1), 65),
                     padding: const EdgeInsets.all(20),
@@ -50,7 +73,7 @@ class _PageHome extends State<PageHome> {
                   onPressed: () {
   
                   },
-                  child: mText(20, 'Level 1 Alphabet'),
+                  child: mText(20, 'Level 1 Alphabet  \u003E', color: mBlack),
                 ),
               ),
 
@@ -61,7 +84,7 @@ class _PageHome extends State<PageHome> {
                     // foregroundColor: mGreen,
                     backgroundColor: mGreen,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
+                      borderRadius: BorderRadius.circular(17.5),
                     ),
                     minimumSize: Size(wS(context, 1), 65),
                     padding: const EdgeInsets.all(20),
@@ -69,7 +92,7 @@ class _PageHome extends State<PageHome> {
                   onPressed: () {
 
                   },
-                  child: mText(20, 'Level 2 Mathematics'),
+                  child: mText(20, 'Level 2 Mathematics  \u003E', color: mBlack),
                 ),
               ),
 
@@ -80,7 +103,7 @@ class _PageHome extends State<PageHome> {
                     // foregroundColor: mGreen,
                     backgroundColor: mGreen,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
+                      borderRadius: BorderRadius.circular(17.5),
                     ),
                     minimumSize: Size(wS(context, 1), 65),
                     padding: const EdgeInsets.all(20),
@@ -88,7 +111,7 @@ class _PageHome extends State<PageHome> {
                   onPressed: () {
 
                   },
-                  child: mText(20, 'Level 3 Geometry'),
+                  child: mText(20, 'Level 3 Geometry  \u003E', color: mBlack),
                 ),
               ),
 
@@ -99,7 +122,7 @@ class _PageHome extends State<PageHome> {
                     // foregroundColor: mGreen,
                     backgroundColor: mGreen,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
+                      borderRadius: BorderRadius.circular(17.5),
                     ),
                     minimumSize: Size(wS(context, 1), 65),
                     padding: const EdgeInsets.all(20),
@@ -107,7 +130,7 @@ class _PageHome extends State<PageHome> {
                   onPressed: () {
 
                   },
-                  child: mText(20, 'Level 4 Physic'),
+                  child: mText(20, 'Level 4 Physic  \u003E', color: mBlack),
                 ),
               ),
 
@@ -118,7 +141,7 @@ class _PageHome extends State<PageHome> {
                     // foregroundColor: mGreen,
                     backgroundColor: mGreen,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
+                      borderRadius: BorderRadius.circular(17.5),
                     ),
                     minimumSize: Size(wS(context, 1), 65),
                     padding: const EdgeInsets.all(20),
@@ -126,7 +149,7 @@ class _PageHome extends State<PageHome> {
                   onPressed: () {
 
                   },
-                  child: mText(20, 'Level 5 Chemistry'),
+                  child: mText(20, 'Level 5 Chemistry  \u003E', color: mBlack),
                 ),
               ),
 
@@ -137,7 +160,7 @@ class _PageHome extends State<PageHome> {
                     // foregroundColor: mGreen,
                     backgroundColor: mGreen,
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30.0),
+                      borderRadius: BorderRadius.circular(17.5),
                     ),
                     minimumSize: Size(wS(context, 1), 65),
                     padding: const EdgeInsets.all(20),
@@ -145,7 +168,7 @@ class _PageHome extends State<PageHome> {
                   onPressed: () {
 
                   },
-                  child: mText(20, 'Level 6 English'),
+                  child: mText(20, 'Level 6 English  \u003E', color: mBlack),
                 ),
               ),
             ],

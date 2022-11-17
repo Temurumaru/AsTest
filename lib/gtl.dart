@@ -3,8 +3,6 @@
 /// Version - 0.1 |
 /// Author - Temurumaru<Tulenov Temur Pulatovich>
 
-import 'dart:js';
-
 import 'package:flutter/material.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -263,11 +261,13 @@ Widget mText(
       String family = 'Google',
       Color color = mWhite,
       Color backgroundColor = mTransparent,
-      FontWeight fontWeight = FontWeight.normal
+      FontWeight fontWeight = FontWeight.normal,
+      TextAlign? align,
     }
     ) {
   return Text(
     text ?? '',
+    textAlign: align ?? TextAlign.left,
     style: TextStyle(
       decoration: (underline ? TextDecoration.underline : TextDecoration.none),
       fontFamily: family,
